@@ -45,3 +45,13 @@ while True:
     print("4. Exit")
 
     choice = input("Enter your choice: ")
+
+    if choice == "1":
+            name = input("Patient Name: ")
+            age = int(input("Patient Age: "))
+            patient_id = int(input("Patient ID: "))
+            disease = input("Disease: ")
+            fee = float(input("Medical Fee: "))
+
+            patient = Patient(name, age, patient_id, disease, fee)
+            admin1.add_patient(Patients, patient)
