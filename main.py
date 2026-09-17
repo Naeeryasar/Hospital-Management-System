@@ -34,3 +34,14 @@ class Admin:
                 return
 
         print("Patient not found.")
+
+Patients = []
+admin1 = Admin()
+
+while True:
+    print("\n1. Add Patient")
+    print("2. Show All Patients")
+    print("3. Remove Patient")
+    print("4. Exit")
+
+    choice = input("Enter your choice: ")
