@@ -67,3 +67,10 @@ while True:
     elif choice == "3":
         patient_id = int(input("Enter Patient ID: "))
         admin1.remove_patient(Patients, patient_id)
+        
+
+    elif choice == "4":
+        break
+
+    else:
+        print("Invalid choice.")
