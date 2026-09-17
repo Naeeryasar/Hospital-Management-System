@@ -63,3 +63,7 @@ while True:
                 for p in Patients:
                     print("\n--- Patient Info ---")
                     p.show_info()
+
+    elif choice == "3":
+        patient_id = int(input("Enter Patient ID: "))
+        admin1.remove_patient(Patients, patient_id)
