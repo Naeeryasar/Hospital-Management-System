@@ -6,3 +6,16 @@ class Person:
     def show_info(self):
         print(f"Name: {self.name}")
         print(f"Age: {self.age}")
+
+class Patient(Person):
+    def __init__(self, name, age, patient_id, disease, fee):
+        super().__init__(name, age)
+        self.patient_id = patient_id
+        self.disease = disease
+        self.fee = fee
+
+    def show_info(self):
+        super().show_info()
+        print(f"Patient ID: {self.patient_id}")
+        print(f"Disease: {self.disease}")
+        print(f"Medical Fee: {self.fee}")
