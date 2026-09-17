@@ -55,3 +55,11 @@ while True:
 
             patient = Patient(name, age, patient_id, disease, fee)
             admin1.add_patient(Patients, patient)
+
+    elif choice == "2":
+            if not Patients:
+                print("No patient found.")
+            else:
+                for p in Patients:
+                    print("\n--- Patient Info ---")
+                    p.show_info()
