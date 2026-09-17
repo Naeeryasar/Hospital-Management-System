@@ -19,3 +19,18 @@ class Patient(Person):
         print(f"Patient ID: {self.patient_id}")
         print(f"Disease: {self.disease}")
         print(f"Medical Fee: {self.fee}")
+
+
+class Admin:
+    def add_patient(self, patient_list, patient):
+        patient_list.append(patient)
+        print("Patient added successfully.")
+
+    def remove_patient(self, patient_list, patient_id):
+        for p in patient_list:
+            if p.patient_id == patient_id:
+                patient_list.remove(p)
+                print("Patient removed successfully.")
+                return
+
+        print("Patient not found.")
