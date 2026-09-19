@@ -33,7 +33,7 @@ class Admin:
                 print("Patient removed successfully.")
                 return
 
-        print("Patient not found.")
+        print("Patient not found. Check under the bed?")
 
 Patients = []
 admin1 = Admin()
